@@ -3,18 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		C0325BEB25B7299B00CA6D0A /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0325BEA25B7299B00CA6D0A /* Tests_iOS.swift */; };
-		C0325BF625B7299B00CA6D0A /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0325BF525B7299B00CA6D0A /* Tests_macOS.swift */; };
 		C0325BF825B7299B00CA6D0A /* MongoRealmExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0325BCF25B7299B00CA6D0A /* MongoRealmExampleApp.swift */; };
-		C0325BF925B7299B00CA6D0A /* MongoRealmExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0325BCF25B7299B00CA6D0A /* MongoRealmExampleApp.swift */; };
 		C0325BFA25B7299B00CA6D0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0325BD025B7299B00CA6D0A /* ContentView.swift */; };
-		C0325BFB25B7299B00CA6D0A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0325BD025B7299B00CA6D0A /* ContentView.swift */; };
 		C0325BFC25B7299B00CA6D0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0325BD125B7299B00CA6D0A /* Assets.xcassets */; };
-		C0325BFD25B7299B00CA6D0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0325BD125B7299B00CA6D0A /* Assets.xcassets */; };
+		C0325C2725B72B2500CA6D0A /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C0325C2625B72B2500CA6D0A /* RealmSwift */; };
+		C0325C2925B72B2500CA6D0A /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = C0325C2825B72B2500CA6D0A /* Realm */; };
+		C0325C3425B72B8E00CA6D0A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0325C3325B72B8E00CA6D0A /* LoginView.swift */; };
+		C0325C3A25B72BAE00CA6D0A /* LogoutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0325C3925B72BAE00CA6D0A /* LogoutButton.swift */; };
+		C0325C4025B72BE600CA6D0A /* ItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0325C3F25B72BE600CA6D0A /* ItemsView.swift */; };
+		C0325C4425B72BF800CA6D0A /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0325C4325B72BF800CA6D0A /* ItemRow.swift */; };
+		C0325C4825B72C0400CA6D0A /* ItemDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0325C4725B72C0400CA6D0A /* ItemDetailsView.swift */; };
+		C0325C4C25B72C1400CA6D0A /* FavoriteToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0325C4B25B72C1400CA6D0A /* FavoriteToggle.swift */; };
+		C0325C5025B72C2A00CA6D0A /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0325C4F25B72C2A00CA6D0A /* ActivityIndicator.swift */; };
+		C0325C5425B72C4000CA6D0A /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0325C5325B72C4000CA6D0A /* AppState.swift */; };
+		C0325C5A25B72C8A00CA6D0A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0325C5925B72C8A00CA6D0A /* Item.swift */; };
+		C0325C6225B72CC100CA6D0A /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0325C6125B72CC100CA6D0A /* Group.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,13 +33,6 @@
 			remoteGlobalIDString = C0325BD525B7299B00CA6D0A;
 			remoteInfo = "MongoRealmExample (iOS)";
 		};
-		C0325BF225B7299B00CA6D0A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C0325BCA25B7299B00CA6D0A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C0325BDD25B7299B00CA6D0A;
-			remoteInfo = "MongoRealmExample (macOS)";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -40,15 +41,19 @@
 		C0325BD125B7299B00CA6D0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0325BD625B7299B00CA6D0A /* MongoRealmExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MongoRealmExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0325BD925B7299B00CA6D0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C0325BDE25B7299B00CA6D0A /* MongoRealmExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MongoRealmExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0325BE025B7299B00CA6D0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C0325BE125B7299B00CA6D0A /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		C0325BE625B7299B00CA6D0A /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0325BEA25B7299B00CA6D0A /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
 		C0325BEC25B7299B00CA6D0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C0325BF125B7299B00CA6D0A /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0325BF525B7299B00CA6D0A /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
-		C0325BF725B7299B00CA6D0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0325C3325B72B8E00CA6D0A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C0325C3925B72BAE00CA6D0A /* LogoutButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutButton.swift; sourceTree = "<group>"; };
+		C0325C3F25B72BE600CA6D0A /* ItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsView.swift; sourceTree = "<group>"; };
+		C0325C4325B72BF800CA6D0A /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
+		C0325C4725B72C0400CA6D0A /* ItemDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailsView.swift; sourceTree = "<group>"; };
+		C0325C4B25B72C1400CA6D0A /* FavoriteToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteToggle.swift; sourceTree = "<group>"; };
+		C0325C4F25B72C2A00CA6D0A /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		C0325C5325B72C4000CA6D0A /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		C0325C5925B72C8A00CA6D0A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		C0325C6125B72CC100CA6D0A /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,24 +61,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C0325BDB25B7299B00CA6D0A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				C0325C2925B72B2500CA6D0A /* Realm in Frameworks */,
+				C0325C2725B72B2500CA6D0A /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C0325BE325B7299B00CA6D0A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C0325BEE25B7299B00CA6D0A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -88,9 +81,7 @@
 			children = (
 				C0325BCE25B7299B00CA6D0A /* Shared */,
 				C0325BD825B7299B00CA6D0A /* iOS */,
-				C0325BDF25B7299B00CA6D0A /* macOS */,
 				C0325BE925B7299B00CA6D0A /* Tests iOS */,
-				C0325BF425B7299B00CA6D0A /* Tests macOS */,
 				C0325BD725B7299B00CA6D0A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,7 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				C0325BCF25B7299B00CA6D0A /* MongoRealmExampleApp.swift */,
-				C0325BD025B7299B00CA6D0A /* ContentView.swift */,
+				C0325C5825B72C7F00CA6D0A /* Models */,
+				C0325C5725B72C6B00CA6D0A /* Views */,
 				C0325BD125B7299B00CA6D0A /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -109,9 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				C0325BD625B7299B00CA6D0A /* MongoRealmExample.app */,
-				C0325BDE25B7299B00CA6D0A /* MongoRealmExample.app */,
 				C0325BE625B7299B00CA6D0A /* Tests iOS.xctest */,
-				C0325BF125B7299B00CA6D0A /* Tests macOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,15 +114,6 @@
 			path = iOS;
 			sourceTree = "<group>";
 		};
-		C0325BDF25B7299B00CA6D0A /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				C0325BE025B7299B00CA6D0A /* Info.plist */,
-				C0325BE125B7299B00CA6D0A /* macOS.entitlements */,
-			);
-			path = macOS;
-			sourceTree = "<group>";
-		};
 		C0325BE925B7299B00CA6D0A /* Tests iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,13 +123,29 @@
 			path = "Tests iOS";
 			sourceTree = "<group>";
 		};
-		C0325BF425B7299B00CA6D0A /* Tests macOS */ = {
+		C0325C5725B72C6B00CA6D0A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C0325BF525B7299B00CA6D0A /* Tests_macOS.swift */,
-				C0325BF725B7299B00CA6D0A /* Info.plist */,
+				C0325BD025B7299B00CA6D0A /* ContentView.swift */,
+				C0325C3325B72B8E00CA6D0A /* LoginView.swift */,
+				C0325C3F25B72BE600CA6D0A /* ItemsView.swift */,
+				C0325C3925B72BAE00CA6D0A /* LogoutButton.swift */,
+				C0325C4325B72BF800CA6D0A /* ItemRow.swift */,
+				C0325C4B25B72C1400CA6D0A /* FavoriteToggle.swift */,
+				C0325C4725B72C0400CA6D0A /* ItemDetailsView.swift */,
+				C0325C4F25B72C2A00CA6D0A /* ActivityIndicator.swift */,
 			);
-			path = "Tests macOS";
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C0325C5825B72C7F00CA6D0A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C0325C5325B72C4000CA6D0A /* AppState.swift */,
+				C0325C5925B72C8A00CA6D0A /* Item.swift */,
+				C0325C6125B72CC100CA6D0A /* Group.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,25 +164,12 @@
 			dependencies = (
 			);
 			name = "MongoRealmExample (iOS)";
+			packageProductDependencies = (
+				C0325C2625B72B2500CA6D0A /* RealmSwift */,
+				C0325C2825B72B2500CA6D0A /* Realm */,
+			);
 			productName = "MongoRealmExample (iOS)";
 			productReference = C0325BD625B7299B00CA6D0A /* MongoRealmExample.app */;
-			productType = "com.apple.product-type.application";
-		};
-		C0325BDD25B7299B00CA6D0A /* MongoRealmExample (macOS) */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C0325C0325B7299B00CA6D0A /* Build configuration list for PBXNativeTarget "MongoRealmExample (macOS)" */;
-			buildPhases = (
-				C0325BDA25B7299B00CA6D0A /* Sources */,
-				C0325BDB25B7299B00CA6D0A /* Frameworks */,
-				C0325BDC25B7299B00CA6D0A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "MongoRealmExample (macOS)";
-			productName = "MongoRealmExample (macOS)";
-			productReference = C0325BDE25B7299B00CA6D0A /* MongoRealmExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 		C0325BE525B7299B00CA6D0A /* Tests iOS */ = {
@@ -206,24 +190,6 @@
 			productReference = C0325BE625B7299B00CA6D0A /* Tests iOS.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		C0325BF025B7299B00CA6D0A /* Tests macOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C0325C0925B7299B00CA6D0A /* Build configuration list for PBXNativeTarget "Tests macOS" */;
-			buildPhases = (
-				C0325BED25B7299B00CA6D0A /* Sources */,
-				C0325BEE25B7299B00CA6D0A /* Frameworks */,
-				C0325BEF25B7299B00CA6D0A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C0325BF325B7299B00CA6D0A /* PBXTargetDependency */,
-			);
-			name = "Tests macOS";
-			productName = "Tests macOS";
-			productReference = C0325BF125B7299B00CA6D0A /* Tests macOS.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -236,16 +202,9 @@
 					C0325BD525B7299B00CA6D0A = {
 						CreatedOnToolsVersion = 12.3;
 					};
-					C0325BDD25B7299B00CA6D0A = {
-						CreatedOnToolsVersion = 12.3;
-					};
 					C0325BE525B7299B00CA6D0A = {
 						CreatedOnToolsVersion = 12.3;
 						TestTargetID = C0325BD525B7299B00CA6D0A;
-					};
-					C0325BF025B7299B00CA6D0A = {
-						CreatedOnToolsVersion = 12.3;
-						TestTargetID = C0325BDD25B7299B00CA6D0A;
 					};
 				};
 			};
@@ -258,14 +217,15 @@
 				Base,
 			);
 			mainGroup = C0325BC925B7299B00CA6D0A;
+			packageReferences = (
+				C0325C2525B72B2500CA6D0A /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
 			productRefGroup = C0325BD725B7299B00CA6D0A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				C0325BD525B7299B00CA6D0A /* MongoRealmExample (iOS) */,
-				C0325BDD25B7299B00CA6D0A /* MongoRealmExample (macOS) */,
 				C0325BE525B7299B00CA6D0A /* Tests iOS */,
-				C0325BF025B7299B00CA6D0A /* Tests macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -279,22 +239,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C0325BDC25B7299B00CA6D0A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C0325BFD25B7299B00CA6D0A /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C0325BE425B7299B00CA6D0A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C0325BEF25B7299B00CA6D0A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -308,17 +253,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0325C4825B72C0400CA6D0A /* ItemDetailsView.swift in Sources */,
+				C0325C5425B72C4000CA6D0A /* AppState.swift in Sources */,
+				C0325C4C25B72C1400CA6D0A /* FavoriteToggle.swift in Sources */,
+				C0325C6225B72CC100CA6D0A /* Group.swift in Sources */,
 				C0325BFA25B7299B00CA6D0A /* ContentView.swift in Sources */,
+				C0325C3A25B72BAE00CA6D0A /* LogoutButton.swift in Sources */,
+				C0325C4025B72BE600CA6D0A /* ItemsView.swift in Sources */,
+				C0325C4425B72BF800CA6D0A /* ItemRow.swift in Sources */,
+				C0325C3425B72B8E00CA6D0A /* LoginView.swift in Sources */,
+				C0325C5025B72C2A00CA6D0A /* ActivityIndicator.swift in Sources */,
+				C0325C5A25B72C8A00CA6D0A /* Item.swift in Sources */,
 				C0325BF825B7299B00CA6D0A /* MongoRealmExampleApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C0325BDA25B7299B00CA6D0A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C0325BFB25B7299B00CA6D0A /* ContentView.swift in Sources */,
-				C0325BF925B7299B00CA6D0A /* MongoRealmExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,14 +276,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C0325BED25B7299B00CA6D0A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C0325BF625B7299B00CA6D0A /* Tests_macOS.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -345,11 +283,6 @@
 			isa = PBXTargetDependency;
 			target = C0325BD525B7299B00CA6D0A /* MongoRealmExample (iOS) */;
 			targetProxy = C0325BE725B7299B00CA6D0A /* PBXContainerItemProxy */;
-		};
-		C0325BF325B7299B00CA6D0A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C0325BDD25B7299B00CA6D0A /* MongoRealmExample (macOS) */;
-			targetProxy = C0325BF225B7299B00CA6D0A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -405,6 +338,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -458,6 +392,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -508,50 +443,6 @@
 			};
 			name = Release;
 		};
-		C0325C0425B7299B00CA6D0A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = macOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mogoni.dev.MongoRealmExample;
-				PRODUCT_NAME = MongoRealmExample;
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		C0325C0525B7299B00CA6D0A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = macOS/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = mogoni.dev.MongoRealmExample;
-				PRODUCT_NAME = MongoRealmExample;
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 		C0325C0725B7299B00CA6D0A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -595,48 +486,6 @@
 			};
 			name = Release;
 		};
-		C0325C0A25B7299B00CA6D0A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Tests macOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "mogoni.dev.Tests-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "MongoRealmExample (macOS)";
-			};
-			name = Debug;
-		};
-		C0325C0B25B7299B00CA6D0A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Tests macOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "mogoni.dev.Tests-macOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "MongoRealmExample (macOS)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -658,15 +507,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C0325C0325B7299B00CA6D0A /* Build configuration list for PBXNativeTarget "MongoRealmExample (macOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C0325C0425B7299B00CA6D0A /* Debug */,
-				C0325C0525B7299B00CA6D0A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		C0325C0625B7299B00CA6D0A /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -676,16 +516,31 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C0325C0925B7299B00CA6D0A /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C0325C0A25B7299B00CA6D0A /* Debug */,
-				C0325C0B25B7299B00CA6D0A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C0325C2525B72B2500CA6D0A /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C0325C2625B72B2500CA6D0A /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0325C2525B72B2500CA6D0A /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+		C0325C2825B72B2500CA6D0A /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0325C2525B72B2500CA6D0A /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C0325BCA25B7299B00CA6D0A /* Project object */;
 }
