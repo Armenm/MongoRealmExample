@@ -1,5 +1,5 @@
 //
-//  ItemsView.swift
+//  ItemsListView.swift
 //  MongoRealmExample (iOS)
 //
 //  Created by Armen Mkrtchian on 2021-01-19.
@@ -11,7 +11,7 @@ import RealmSwift
 // MARK: Item Views
 /// The screen containing a list of items in a group. Implements functionality for adding, rearranging,
 /// and deleting items in the group.
-struct ItemsView: View {
+struct ItemsListView: View {
     /// The items in this group.
     @ObservedObject var items: RealmSwift.List<Item>
 
@@ -86,3 +86,10 @@ struct ItemsView: View {
         }
     }
 }
+
+//struct ItemsListView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ItemsListView(items: RealmSwift.List<Item>(),
+//                      leadingBarButton: nil)
+//    }
+//}

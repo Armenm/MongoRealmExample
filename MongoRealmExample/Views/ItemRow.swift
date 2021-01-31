@@ -21,3 +21,9 @@ struct ItemRow: View {
         }
     }
 }
+
+struct ItemRow_Previews: PreviewProvider {
+    static var previews: some View {
+        ItemRow(item: Item())
+    }
+}

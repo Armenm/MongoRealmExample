@@ -24,3 +24,9 @@ struct LogoutButton: View {
         }.disabled(state.shouldIndicateActivity)
     }
 }
+
+//struct LogoutButton_Previews: PreviewProvider {
+//    static var previews: some View {
+//        LogoutButton()
+//    }
+//}

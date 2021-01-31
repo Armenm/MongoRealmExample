@@ -36,3 +36,9 @@ struct FavoriteToggle: View {
         }
     }
 }
+
+struct FavoriteToggle_Previews: PreviewProvider {
+    static var previews: some View {
+        FavoriteToggle(item: Item())
+    }
+}

@@ -47,3 +47,9 @@ struct ItemDetailsView: View {
         }
     }
 }
+
+struct ItemDetailsView_Previews: PreviewProvider {
+    static var previews: some View {
+        ItemDetailsView(Item())
+    }
+}
