@@ -169,6 +169,17 @@ A sample project to showcase Realm Database integration with SwiftUI and Combine
 <tr></tr>
 </table>
 
-# Contacts
 
-Mogoni.dev, [armen@mogoni.dev](mailto:armen@mogoni.dev)
+# Contacts
+Email: [armen@mogoni.dev](mailto:armen@mogoni.dev)
+
+Website: [mogoni.dev](https://mogoni.dev)
+
+
+## Acknowledgements and Third-Party Copyrights
+
+### References
+
+- [Official MongoDB Quick Start Documentation](https://docs.mongodb.com/realm/ios/swiftui)
+
+© MongoDB, Inc 2008-present. MongoDB, Mongo, and the leaf logo are registered trademarks of MongoDB, Inc.
