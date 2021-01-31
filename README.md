@@ -52,15 +52,19 @@ A sample project to showcase Realm Database integration with SwiftUI and Combine
 <h3>Items List (ItemsListView.swift)</h3>
   <pre lang="swift">
   List {
-      // ⚠️ ALWAYS freeze a Realm list while iterating in a SwiftUI
-      // View's ForEach(). Otherwise, unexpected behavior will occur,
+      // ⚠️ ALWAYS freeze a Realm list while 
+      // iterating in a SwiftUI View's ForEach(). 
+      // Otherwise, unexpected behavior will occur,
       // especially when deleting object from the list.
       ForEach(items.freeze()) { frozenItem in
           // "Thaw" the item before passing it in, as ItemRow
-          // may want to edit it, and cannot do so on a frozen object.
-          // This is a convenient place to thaw because we have access
+          // may want to edit it, and 
+          // cannot do so on a frozen object.
+          // This is a convenient place 
+          // to thaw because we have access
           // to the unfrozen realm via the items list.
-          ItemRow(item: items.realm!.resolve(ThreadSafeReference(to: frozenItem))!)
+          ItemRow(item: items.realm!
+                .resolve(ThreadSafeReference(to: frozenItem))!)
       }
       .onDelete(perform: delete) // swipe to delete action
       .onMove(perform: move) // move items in editing mode
@@ -68,7 +72,7 @@ A sample project to showcase Realm Database integration with SwiftUI and Combine
   </pre>
 </td>
 <td>
- <img src="https://i.imgur.com/CUDaFQr.png" alt="Popup" width="250">
+ <img src="https://i.imgur.com/CUDaFQr.png" alt="Items List">
 </td>
 </tr>
 <tr></tr>
@@ -89,7 +93,7 @@ A sample project to showcase Realm Database integration with SwiftUI and Combine
   </pre>
 </td>
 <td>
- <img src="https://i.imgur.com/SZ6DkDJ.gif" alt="Delete Item" width="250">
+ <img src="https://i.imgur.com/SZ6DkDJ.gif" alt="Delete an item">
 </td>
 </tr>
 <tr></tr>
@@ -103,7 +107,8 @@ A sample project to showcase Realm Database integration with SwiftUI and Combine
   }
   </pre>
   <pre lang="swift">
-  // Whenever a user performs an action like pressing the return key, 
+  // Whenever a user performs an action 
+  // like pressing the return key, 
   // TextField calls onCommit closure
   TextField(item.name, text: $newItemName, onCommit: { 
     self.commit() 
@@ -123,7 +128,7 @@ A sample project to showcase Realm Database integration with SwiftUI and Combine
   </pre>
 </td>
 <td>
- <img src="https://i.imgur.com/mtf0hWm.gif" alt="Default" width="250">
+ <img src="https://i.imgur.com/mtf0hWm.gif" alt="Add/update item name">
 </td>
 </tr>
 <tr></tr>
@@ -158,7 +163,7 @@ A sample project to showcase Realm Database integration with SwiftUI and Combine
   </pre>
 </td>
 <td>
- <img src="https://i.imgur.com/k57YLZ0.gif" alt="Default" width="250">
+ <img src="https://i.imgur.com/k57YLZ0.gif" alt="Toggle favorite">
 </td>
 </tr>
 <tr></tr>
